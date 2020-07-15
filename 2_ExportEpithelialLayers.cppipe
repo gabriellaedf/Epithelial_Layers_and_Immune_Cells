@@ -1,0 +1,1868 @@
+CellProfiler Pipeline: http://www.cellprofiler.org
+Version:4
+DateRevision:318
+GitHash:
+ModuleCount:106
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    :\xff\xfe
+    Filter images?:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00o\x00n\x00l\x00y\x00
+    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00e\x00x\x00t\x00e\x00n\x00s\x00i\x00o\x00n\x00 \x00d\x00o\x00e\x00s\x00 \x00i\x00s\x00i\x00m\x00a\x00g\x00e\x00)\x00 \x00(\x00d\x00i\x00r\x00e\x00c\x00t\x00o\x00r\x00y\x00 \x00d\x00o\x00e\x00s\x00n\x00o\x00t\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00r\x00e\x00g\x00e\x00x\x00p\x00 \x00"\x00\x5B\x00\\\x00\\\x00\\\x00\\\x00/\x00\x5D\x00\\\x00\\\x00.\x00"\x00)\x00
+
+Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:\xff\xfeY\x00e\x00s\x00
+    Metadata data type:\xff\xfeT\x00e\x00x\x00t\x00
+    Metadata types:\xff\xfe{\x00}\x00
+    Extraction method count:\xff\xfe2\x00
+    Metadata extraction method:\xff\xfeE\x00x\x00t\x00r\x00a\x00c\x00t\x00 \x00f\x00r\x00o\x00m\x00 \x00f\x00i\x00l\x00e\x00/\x00f\x00o\x00l\x00d\x00e\x00r\x00 \x00n\x00a\x00m\x00e\x00s\x00
+    Metadata source:\xff\xfeF\x00i\x00l\x00e\x00 \x00n\x00a\x00m\x00e\x00
+    Regular expression to extract from file name:\xff\xfe^\x00(\x00?\x00P\x00<\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00>\x00.\x00*\x00)\x00_\x00(\x00?\x00P\x00<\x00i\x00m\x00a\x00g\x00e\x00>\x00.\x00*\x00)\x00.\x00p\x00n\x00g\x00
+    Regular expression to extract from folder name:\xff\xfe(\x00?\x00P\x00<\x00D\x00a\x00t\x00e\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x004\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00)\x00$\x00
+    Extract metadata from:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00m\x00a\x00t\x00c\x00h\x00i\x00n\x00g\x00 \x00a\x00 \x00r\x00u\x00l\x00e\x00
+    Select the filtering criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00.\x00p\x00n\x00g\x00"\x00)\x00
+    Metadata file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Match file and image metadata:\xff\xfe\x5B\x00\x5D\x00
+    Use case insensitive matching?:\xff\xfeN\x00o\x00
+    Metadata file name:\xff\xfeN\x00o\x00n\x00e\x00
+    Metadata extraction method:\xff\xfeE\x00x\x00t\x00r\x00a\x00c\x00t\x00 \x00f\x00r\x00o\x00m\x00 \x00f\x00i\x00l\x00e\x00/\x00f\x00o\x00l\x00d\x00e\x00r\x00 \x00n\x00a\x00m\x00e\x00s\x00
+    Metadata source:\xff\xfeF\x00i\x00l\x00e\x00 \x00n\x00a\x00m\x00e\x00
+    Regular expression to extract from file name:\xff\xfe^\x00(\x00?\x00P\x00<\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00>\x00.\x00*\x00)\x00.\x00t\x00i\x00f\x00
+    Regular expression to extract from folder name:\xff\xfe(\x00?\x00P\x00<\x00D\x00a\x00t\x00e\x00>\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x004\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00_\x00\x5B\x000\x00-\x009\x00\x5D\x00{\x002\x00}\x00)\x00$\x00
+    Extract metadata from:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00m\x00a\x00t\x00c\x00h\x00i\x00n\x00g\x00 \x00a\x00 \x00r\x00u\x00l\x00e\x00
+    Select the filtering criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00.\x00t\x00i\x00f\x00"\x00)\x00
+    Metadata file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Match file and image metadata:\xff\xfe\x5B\x00\x5D\x00
+    Use case insensitive matching?:\xff\xfeN\x00o\x00
+    Metadata file name:\xff\xfeN\x00o\x00n\x00e\x00
+
+NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00m\x00a\x00t\x00c\x00h\x00i\x00n\x00g\x00 \x00r\x00u\x00l\x00e\x00s\x00
+    Select the image type:\xff\xfeG\x00r\x00a\x00y\x00s\x00c\x00a\x00l\x00e\x00 \x00i\x00m\x00a\x00g\x00e\x00
+    Name to assign these images:\xff\xfeD\x00N\x00A\x00
+    Match metadata:\xff\xfe\x5B\x00{\x00u\x00\'\x00b\x00a\x00s\x00a\x00l\x00\'\x00\x3A\x00 \x00u\x00\'\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00\'\x00,\x00 \x00u\x00\'\x00r\x00a\x00w\x00\'\x00\x3A\x00 \x00u\x00\'\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00\'\x00,\x00 \x00u\x00\'\x00a\x00p\x00i\x00c\x00a\x00l\x00\'\x00\x3A\x00 \x00u\x00\'\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00\'\x00,\x00 \x00u\x00\'\x00e\x00l\x00i\x00n\x00e\x00\'\x00\x3A\x00 \x00u\x00\'\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00\'\x00,\x00 \x00u\x00\'\x00n\x00e\x00t\x00h\x00i\x00g\x00h\x00\'\x00\x3A\x00 \x00u\x00\'\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00\'\x00}\x00\x5D\x00
+    Image set matching method:\xff\xfeM\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Assignments count:\xff\xfe5\x00
+    Single images count:\xff\xfe0\x00
+    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+    Process as 3D?:\xff\xfeN\x00o\x00
+    Relative pixel spacing in X:\xff\xfe1\x00.\x000\x00
+    Relative pixel spacing in Y:\xff\xfe1\x00.\x000\x00
+    Relative pixel spacing in Z:\xff\xfe1\x00.\x000\x00
+    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00_\x00A\x00.\x00p\x00n\x00g\x00"\x00)\x00
+    Name to assign these images:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00
+    Name to assign these objects:\xff\xfeC\x00e\x00l\x00l\x00
+    Select the image type:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00m\x00a\x00s\x00k\x00
+    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00_\x00B\x00.\x00p\x00n\x00g\x00"\x00)\x00
+    Name to assign these images:\xff\xfeb\x00a\x00s\x00a\x00l\x00
+    Name to assign these objects:\xff\xfeC\x00e\x00l\x00l\x00
+    Select the image type:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00m\x00a\x00s\x00k\x00
+    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00_\x00E\x00.\x00p\x00n\x00g\x00"\x00)\x00
+    Name to assign these images:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Name to assign these objects:\xff\xfeC\x00e\x00l\x00l\x00
+    Select the image type:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00m\x00a\x00s\x00k\x00
+    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00_\x00n\x00e\x00u\x00r\x00n\x00e\x00t\x00.\x00p\x00n\x00g\x00"\x00)\x00
+    Name to assign these images:\xff\xfen\x00e\x00t\x00h\x00i\x00g\x00h\x00
+    Name to assign these objects:\xff\xfeC\x00e\x00l\x00l\x00
+    Select the image type:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00m\x00a\x00s\x00k\x00
+    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+    Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00.\x00t\x00i\x00f\x00"\x00)\x00
+    Name to assign these images:\xff\xfer\x00a\x00w\x00
+    Name to assign these objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00u\x00s\x00
+    Select the image type:\xff\xfeC\x00o\x00l\x00o\x00r\x00 \x00i\x00m\x00a\x00g\x00e\x00
+    Set intensity range from:\xff\xfeI\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Maximum intensity:\xff\xfe2\x005\x005\x00.\x000\x00
+
+Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:\xff\xfeN\x00o\x00
+    grouping metadata count:\xff\xfe1\x00
+    Metadata category:\xff\xfeN\x00o\x00n\x00e\x00
+
+IdentifyPrimaryObjects:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify apical line as object\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00
+    Name the primary objects to be identified:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe2\x000\x00,\x001\x000\x000\x000\x000\x000\x000\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+ConvertObjectsToImage:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert apical line object to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Name the output image:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:7|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'invert the apical line image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeN\x00o\x00
+    Set values greater than 1 equal to 1?:\xff\xfeN\x00o\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeA\x00p\x00i\x00c\x00a\x00l\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'Create a distance transform of the apical line\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeA\x00p\x00i\x00c\x00a\x00l\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Name the output image:\xff\xfeA\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeN\x00o\x00
+
+IdentifyPrimaryObjects:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify the basal line\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeb\x00a\x00s\x00a\x00l\x00
+    Name the primary objects to be identified:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe2\x000\x00,\x001\x000\x000\x000\x000\x000\x000\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+ConvertObjectsToImage:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert basal line object to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Name the output image:\xff\xfeb\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Invert basal line image \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeN\x00o\x00
+    Set values greater than 1 equal to 1?:\xff\xfeN\x00o\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeB\x00a\x00s\x00a\x00l\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeb\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'Create a distance transform of the basal line image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeB\x00a\x00s\x00a\x00l\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Name the output image:\xff\xfeB\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeN\x00o\x00
+
+IdentifyPrimaryObjects:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'identify the e-cadherin line\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Name the primary objects to be identified:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe2\x000\x00,\x001\x000\x000\x000\x000\x000\x000\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+ConvertObjectsToImage:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert e-cadherin line object to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Name the output image:\xff\xfee\x00l\x00i\x00n\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Invert the e-cadherin line image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeN\x00o\x00
+    Set values greater than 1 equal to 1?:\xff\xfeN\x00o\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeE\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfee\x00l\x00i\x00n\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:16|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'Create a distance transform of the e-cadherin line\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeE\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Name the output image:\xff\xfeE\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeN\x00o\x00
+
+ColorToGray:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Create a grayscale image of the RGB raw image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfer\x00a\x00w\x00
+    Conversion method:\xff\xfeC\x00o\x00m\x00b\x00i\x00n\x00e\x00
+    Image type:\xff\xfeR\x00G\x00B\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00G\x00r\x00a\x00y\x00
+    Relative weight of the red channel:\xff\xfe1\x00.\x000\x00
+    Relative weight of the green channel:\xff\xfe1\x00.\x000\x00
+    Relative weight of the blue channel:\xff\xfe1\x00.\x000\x00
+    Convert red to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00R\x00e\x00d\x00
+    Convert green to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00G\x00r\x00e\x00e\x00n\x00
+    Convert blue to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Convert hue to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00H\x00u\x00e\x00
+    Convert saturation to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00S\x00a\x00t\x00u\x00r\x00a\x00t\x00i\x00o\x00n\x00
+    Convert value to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00V\x00a\x00l\x00u\x00e\x00
+    Channel count:\xff\xfe1\x00
+    Channel number:\xff\xfe1\x00
+    Relative weight of the channel:\xff\xfe1\x00.\x000\x00
+    Image name:\xff\xfeC\x00h\x00a\x00n\x00n\x00e\x00l\x001\x00
+
+ColorToGray:[module_num:18|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Split the raw RGB image into separate RGB channels \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfer\x00a\x00w\x00
+    Conversion method:\xff\xfeS\x00p\x00l\x00i\x00t\x00
+    Image type:\xff\xfeR\x00G\x00B\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00G\x00r\x00a\x00y\x00
+    Relative weight of the red channel:\xff\xfe1\x00.\x000\x00
+    Relative weight of the green channel:\xff\xfe1\x00.\x000\x00
+    Relative weight of the blue channel:\xff\xfe1\x00.\x000\x00
+    Convert red to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00R\x00e\x00d\x00
+    Convert green to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00G\x00r\x00e\x00e\x00n\x00
+    Convert blue to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Convert hue to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00H\x00u\x00e\x00
+    Convert saturation to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00S\x00a\x00t\x00u\x00r\x00a\x00t\x00i\x00o\x00n\x00
+    Convert value to gray?:\xff\xfeY\x00e\x00s\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00V\x00a\x00l\x00u\x00e\x00
+    Channel count:\xff\xfe1\x00
+    Channel number:\xff\xfe1\x00
+    Relative weight of the channel:\xff\xfe1\x00.\x000\x00
+    Image name:\xff\xfeC\x00h\x00a\x00n\x00n\x00e\x00l\x001\x00
+
+IdentifyPrimaryObjects:[module_num:19|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify the whole region of interest (ROI) object from the black background. (When exporting the manually outlined epithelial area (ROI) from Pannoramic Viewer the ROI is exported on a black background.)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeO\x00r\x00i\x00g\x00G\x00r\x00a\x00y\x00
+    Name the primary objects to be identified:\xff\xfeR\x00O\x00I\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x000\x00,\x001\x000\x000\x000\x000\x000\x000\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x000\x000\x001\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+ConvertObjectsToImage:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert the ROI object to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeR\x00O\x00I\x00
+    Name the output image:\xff\xfeR\x00O\x00I\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ExpandOrShrinkObjects:[module_num:21|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Expand the E-cadherin line object by 2 pixels, to be used to split the ROI into two parts. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Name the output objects:\xff\xfee\x00l\x00i\x00n\x00e\x00L\x00a\x00r\x00g\x00e\x00
+    Select the operation:\xff\xfeE\x00x\x00p\x00a\x00n\x00d\x00 \x00o\x00b\x00j\x00e\x00c\x00t\x00s\x00 \x00b\x00y\x00 \x00a\x00 \x00s\x00p\x00e\x00c\x00i\x00f\x00i\x00e\x00d\x00 \x00n\x00u\x00m\x00b\x00e\x00r\x00 \x00o\x00f\x00 \x00p\x00i\x00x\x00e\x00l\x00s\x00
+    Number of pixels by which to expand or shrink:\xff\xfe2\x00
+    Fill holes in objects so that all objects shrink to a single point?:\xff\xfeN\x00o\x00
+
+MaskObjects:[module_num:22|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'Mask the larger E-cadherin line with the ROI object, to remove the few pixels of the expanded E-cadherin line that extend outside the ROI \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfee\x00l\x00i\x00n\x00e\x00L\x00a\x00r\x00g\x00e\x00
+    Name the masked objects:\xff\xfeM\x00a\x00s\x00k\x00e\x00d\x00E\x00l\x00i\x00n\x00e\x00L\x00a\x00r\x00g\x00e\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeR\x00O\x00I\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeN\x00o\x00
+
+ConvertObjectsToImage:[module_num:23|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert the masked E-cadherin line to an image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeM\x00a\x00s\x00k\x00e\x00d\x00E\x00l\x00i\x00n\x00e\x00L\x00a\x00r\x00g\x00e\x00
+    Name the output image:\xff\xfee\x00l\x00i\x00n\x00e\x00L\x00a\x00r\x00g\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:24|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Subtract the large E-cadherin line from the ROI image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeS\x00u\x00b\x00t\x00r\x00a\x00c\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeN\x00o\x00
+    Set values greater than 1 equal to 1?:\xff\xfeN\x00o\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeT\x00w\x00o\x00R\x00O\x00I\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeR\x00O\x00I\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfee\x00l\x00i\x00n\x00e\x00L\x00a\x00r\x00g\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+IdentifyPrimaryObjects:[module_num:25|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify the now separated two obejcts within the ROI\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeT\x00w\x00o\x00R\x00O\x00I\x00
+    Name the primary objects to be identified:\xff\xfeR\x00O\x00I\x00s\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x001\x000\x000\x000\x000\x000\x000\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x002\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00h\x00r\x00e\x00e\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeB\x00a\x00c\x00k\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe2\x000\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+MeasureObjectSizeShape:[module_num:26|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Measure the area of the two objects within the ROI\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to measure:\xff\xfeR\x00O\x00I\x00s\x00
+    Calculate the Zernike features?:\xff\xfeN\x00o\x00
+
+FilterObjects:[module_num:27|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'Based on size, the larger area of the two objects is defined as the E-cadherin part\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the objects to filter:\xff\xfeR\x00O\x00I\x00s\x00
+    Name the output objects:\xff\xfeE\x00c\x00a\x00d\x00
+    Select the filtering mode:\xff\xfeM\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00s\x00
+    Select the filtering method:\xff\xfeM\x00a\x00x\x00i\x00m\x00a\x00l\x00
+    Select the objects that contain the filtered objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the location of the rules or classifier file:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules or classifier file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe1\x00
+    Measurement count:\xff\xfe1\x00
+    Additional object count:\xff\xfe0\x00
+    Assign overlapping child to:\xff\xfeB\x00o\x00t\x00h\x00 \x00p\x00a\x00r\x00e\x00n\x00t\x00s\x00
+    Select the measurement to filter by:\xff\xfeA\x00r\x00e\x00a\x00S\x00h\x00a\x00p\x00e\x00_\x00A\x00r\x00e\x00a\x00
+    Filter using a minimum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe5\x000\x000\x000\x00
+    Filter using a maximum measurement value?:\xff\xfeN\x00o\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+
+MaskObjects:[module_num:28|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'The E-cadherin part is then masked away from the ROI object, to identify the superficial layer \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeR\x00O\x00I\x00
+    Name the masked objects:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeE\x00c\x00a\x00d\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeY\x00e\x00s\x00
+
+IdentifyPrimaryObjects:[module_num:29|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify nuclei objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Name the primary objects to be identified:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe8\x00,\x001\x005\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeY\x00e\x00s\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
+    Size of smoothing filter:\xff\xfe5\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe1\x002\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeN\x00o\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeN\x00o\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x005\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x000\x000\x001\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00h\x00r\x00e\x00e\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeB\x00a\x00c\x00k\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe2\x000\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+SplitOrMergeObjects:[module_num:30|svn_version:\'Unknown\'|variable_revision_number:6|show_window:False|notes:\x5B\'Merge nuclei within 6 pixels of each other \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00
+    Name the new objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00D\x00e\x00n\x00s\x00e\x00
+    Operation:\xff\xfeM\x00e\x00r\x00g\x00e\x00
+    Maximum distance within which to merge objects:\xff\xfe6\x00
+    Merge using a grayscale image?:\xff\xfeN\x00o\x00
+    Select the grayscale image to guide merging:\xff\xfeN\x00o\x00n\x00e\x00
+    Minimum intensity fraction:\xff\xfe0\x00.\x009\x00
+    Method to find object intensity:\xff\xfeC\x00l\x00o\x00s\x00e\x00s\x00t\x00 \x00p\x00o\x00i\x00n\x00t\x00
+    Merging method:\xff\xfeD\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the parent object:\xff\xfeN\x00o\x00n\x00e\x00
+    Output object type:\xff\xfeD\x00i\x00s\x00c\x00o\x00n\x00n\x00e\x00c\x00t\x00e\x00d\x00
+
+MeasureObjectSizeShape:[module_num:31|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Measure the size of the merged nuclei objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to measure:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00D\x00e\x00n\x00s\x00e\x00
+    Calculate the Zernike features?:\xff\xfeN\x00o\x00
+
+FilterObjects:[module_num:32|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'Filter merged nuclei objects smaller than 5000 pixels. These smaller merged nuclei objects can be only two nuclei that are closely located, i.e. not part of the parabasal layer.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the objects to filter:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00D\x00e\x00n\x00s\x00e\x00
+    Name the output objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00C\x00h\x00u\x00n\x00k\x00s\x00
+    Select the filtering mode:\xff\xfeM\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00s\x00
+    Select the filtering method:\xff\xfeL\x00i\x00m\x00i\x00t\x00s\x00
+    Select the objects that contain the filtered objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the location of the rules or classifier file:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules or classifier file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe1\x00
+    Measurement count:\xff\xfe1\x00
+    Additional object count:\xff\xfe0\x00
+    Assign overlapping child to:\xff\xfeB\x00o\x00t\x00h\x00 \x00p\x00a\x00r\x00e\x00n\x00t\x00s\x00
+    Select the measurement to filter by:\xff\xfeA\x00r\x00e\x00a\x00S\x00h\x00a\x00p\x00e\x00_\x00A\x00r\x00e\x00a\x00
+    Filter using a minimum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe5\x000\x000\x000\x00
+    Filter using a maximum measurement value?:\xff\xfeN\x00o\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+
+ConvertObjectsToImage:[module_num:33|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert the large merged nuclei objects to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00C\x00h\x00u\x00n\x00k\x00s\x00
+    Name the output image:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00C\x00h\x00u\x00n\x00k\x00s\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:34|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'To smooth the edge of the merged nuclei to create a more coherent parabasal layer, the merged nuclei image is first inverted. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeY\x00e\x00s\x00
+    Set values greater than 1 equal to 1?:\xff\xfeY\x00e\x00s\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00e\x00d\x00N\x00u\x00c\x00C\x00h\x00u\x00n\x00k\x00s\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeN\x00u\x00c\x00l\x00e\x00i\x00C\x00h\x00u\x00n\x00k\x00s\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:35|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'A distance transform is created, scaled 0-1\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00e\x00d\x00N\x00u\x00c\x00C\x00h\x00u\x00n\x00k\x00s\x00
+    Name the output image:\xff\xfeD\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00N\x00u\x00c\x00C\x00h\x00u\x00n\x00k\x00s\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeY\x00e\x00s\x00
+
+IdentifyPrimaryObjects:[module_num:36|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'The parabasal area object is identified using a 0.018 threshold of the distance transform image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeD\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00N\x00u\x00c\x00C\x00h\x00u\x00n\x00k\x00s\x00
+    Name the primary objects to be identified:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00A\x00r\x00e\x00a\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x004\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeN\x00o\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x000\x001\x008\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+MaskObjects:[module_num:37|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'The parabasal area is masked by the ROI to remove parts of parabasal area that extend outside the ROI.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeR\x00O\x00I\x00
+    Name the masked objects:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00A\x00r\x00e\x00a\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeY\x00e\x00s\x00
+
+ConvertObjectsToImage:[module_num:38|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'The parabasal layer is converted to an image to be saved. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00
+    Name the output image:\xff\xfep\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+IdentifyPrimaryObjects:[module_num:39|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'The E-cadherin net object is identified from the uploaded image, holes are filled using the fill holes alternative. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfen\x00e\x00t\x00h\x00i\x00g\x00h\x00
+    Name the primary objects to be identified:\xff\xfen\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x004\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeN\x00o\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeA\x00f\x00t\x00e\x00r\x00 \x00b\x00o\x00t\x00h\x00 \x00t\x00h\x00r\x00e\x00s\x00h\x00o\x00l\x00d\x00i\x00n\x00g\x00 \x00a\x00n\x00d\x00 \x00d\x00e\x00c\x00l\x00u\x00m\x00p\x00i\x00n\x00g\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+ConvertObjectsToImage:[module_num:40|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'The identified net structure block is converted to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfen\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00
+    Name the output image:\xff\xfen\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:41|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'The ROI image is inverted. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeY\x00e\x00s\x00
+    Set values greater than 1 equal to 1?:\xff\xfeY\x00e\x00s\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00e\x00d\x00R\x00O\x00I\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeR\x00O\x00I\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+ImageMath:[module_num:42|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'The parabasal layer, the inverted ROI area is added to the net-block image. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeY\x00e\x00s\x00
+    Set values greater than 1 equal to 1?:\xff\xfeY\x00e\x00s\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeN\x00e\x00t\x00w\x00h\x00i\x00t\x00e\x00b\x00g\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00e\x00d\x00R\x00O\x00I\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfen\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the third image:\xff\xfep\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the third image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+IdentifyPrimaryObjects:[module_num:43|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'New objects are identified, when the ROI background is white, the whole parabasal and intact net-structure will form one object.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeN\x00e\x00t\x00w\x00h\x00i\x00t\x00e\x00b\x00g\x00
+    Name the primary objects to be identified:\xff\xfeN\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00s\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x004\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeN\x00o\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+MeasureObjectSizeShape:[module_num:44|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Measure the area of the net-block objects (this include the main object as well as the separate thin net structures)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
+    Select objects to measure:\xff\xfeN\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00s\x00
+    Calculate the Zernike features?:\xff\xfeN\x00o\x00
+
+FilterObjects:[module_num:45|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'Filter to retrieve the net-block object with largest area. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the objects to filter:\xff\xfeN\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00s\x00
+    Name the output objects:\xff\xfeN\x00e\x00t\x00B\x00l\x00o\x00c\x00k\x00
+    Select the filtering mode:\xff\xfeM\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00s\x00
+    Select the filtering method:\xff\xfeM\x00a\x00x\x00i\x00m\x00a\x00l\x00
+    Select the objects that contain the filtered objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the location of the rules or classifier file:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules or classifier file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe1\x00
+    Measurement count:\xff\xfe1\x00
+    Additional object count:\xff\xfe0\x00
+    Assign overlapping child to:\xff\xfeB\x00o\x00t\x00h\x00 \x00p\x00a\x00r\x00e\x00n\x00t\x00s\x00
+    Select the measurement to filter by:\xff\xfeA\x00r\x00e\x00a\x00S\x00h\x00a\x00p\x00e\x00_\x00A\x00r\x00e\x00a\x00
+    Filter using a minimum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe5\x000\x000\x000\x00
+    Filter using a maximum measurement value?:\xff\xfeN\x00o\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+
+MaskObjects:[module_num:46|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'Mask the ROI with netblock object, to remove the area outside the ROI.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeR\x00O\x00I\x00
+    Name the masked objects:\xff\xfeM\x00a\x00s\x00k\x00e\x00d\x00N\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeN\x00e\x00t\x00B\x00l\x00o\x00c\x00k\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeY\x00e\x00s\x00
+
+ConvertObjectsToImage:[module_num:47|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert the net block area to image.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeM\x00a\x00s\x00k\x00e\x00d\x00N\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00
+    Name the output image:\xff\xfem\x00a\x00s\x00k\x00e\x00d\x00n\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+IdentifyPrimaryObjects:[module_num:48|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify the areas with no or non-intact E-cadherin net i.e. a hypothetically named the \\xe2\\x80\\x9c virus-reach\\xe2\\x80\\x9d area. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
+    Select the input image:\xff\xfem\x00a\x00s\x00k\x00e\x00d\x00n\x00e\x00t\x00b\x00l\x00o\x00c\x00k\x00I\x00m\x00a\x00g\x00e\x00
+    Name the primary objects to be identified:\xff\xfev\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00e\x00s\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x004\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeN\x00o\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+MeasureObjectSizeShape:[module_num:49|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Measure the area of the virus reach objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to measure:\xff\xfev\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00e\x00s\x00
+    Calculate the Zernike features?:\xff\xfeN\x00o\x00
+
+FilterObjects:[module_num:50|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'To retrieve the area starting from the superficial layer and extending down through the E-cadherin net that has any openings, the smaller \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d objects are removed by filter. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the objects to filter:\xff\xfev\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00e\x00s\x00
+    Name the output objects:\xff\xfeV\x00i\x00r\x00u\x00s\x00R\x00e\x00a\x00c\x00h\x00
+    Select the filtering mode:\xff\xfeM\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00s\x00
+    Select the filtering method:\xff\xfeM\x00a\x00x\x00i\x00m\x00a\x00l\x00
+    Select the objects that contain the filtered objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the location of the rules or classifier file:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules or classifier file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe1\x00
+    Measurement count:\xff\xfe1\x00
+    Additional object count:\xff\xfe0\x00
+    Assign overlapping child to:\xff\xfeB\x00o\x00t\x00h\x00 \x00p\x00a\x00r\x00e\x00n\x00t\x00s\x00
+    Select the measurement to filter by:\xff\xfeA\x00r\x00e\x00a\x00S\x00h\x00a\x00p\x00e\x00_\x00A\x00r\x00e\x00a\x00
+    Filter using a minimum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe0\x00.\x000\x00
+    Filter using a maximum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+
+ConvertObjectsToImage:[module_num:51|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert to image.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeV\x00i\x00r\x00u\x00s\x00R\x00e\x00a\x00c\x00h\x00
+    Name the output image:\xff\xfeV\x00i\x00r\x00u\x00s\x00R\x00e\x00a\x00c\x00h\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:52|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Invert the image.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeY\x00e\x00s\x00
+    Set values greater than 1 equal to 1?:\xff\xfeY\x00e\x00s\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00e\x00d\x00v\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeV\x00i\x00r\x00u\x00s\x00R\x00e\x00a\x00c\x00h\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:53|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'Create a distance transform of the \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d area to smoothed the edge. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00e\x00d\x00v\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00
+    Name the output image:\xff\xfeV\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeY\x00e\x00s\x00
+
+IdentifyPrimaryObjects:[module_num:54|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\'Identify a smoothed \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d object by a treshold of 0.015 in the distance transform image. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeV\x00i\x00r\x00u\x00s\x00r\x00e\x00a\x00c\x00h\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Name the primary objects to be identified:\xff\xfeV\x00i\x00r\x00u\x00s\x00R\x00e\x00a\x00c\x00h\x00B\x00l\x00o\x00c\x00k\x00
+    Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x000\x00,\x004\x000\x00
+    Discard objects outside the diameter range?:\xff\xfeN\x00o\x00
+    Discard objects touching the border of the image?:\xff\xfeN\x00o\x00
+    Method to distinguish clumped objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Method to draw dividing lines between clumped objects:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00
+    Size of smoothing filter:\xff\xfe1\x000\x00
+    Suppress local maxima that are closer than this minimum allowed distance:\xff\xfe7\x00.\x000\x00
+    Speed up by using lower-resolution image to find local maxima?:\xff\xfeY\x00e\x00s\x00
+    Fill holes in identified objects?:\xff\xfeN\x00e\x00v\x00e\x00r\x00
+    Automatically calculate size of smoothing filter for declumping?:\xff\xfeY\x00e\x00s\x00
+    Automatically calculate minimum allowed distance between local maxima?:\xff\xfeY\x00e\x00s\x00
+    Handling of objects if excessive number of objects identified:\xff\xfeC\x00o\x00n\x00t\x00i\x00n\x00u\x00e\x00
+    Maximum number of objects:\xff\xfe5\x000\x000\x00
+    Use advanced settings?:\xff\xfeY\x00e\x00s\x00
+    Threshold setting version:\xff\xfe1\x000\x00
+    Threshold strategy:\xff\xfeG\x00l\x00o\x00b\x00a\x00l\x00
+    Thresholding method:\xff\xfeM\x00a\x00n\x00u\x00a\x00l\x00
+    Threshold smoothing scale:\xff\xfe1\x00.\x003\x004\x008\x008\x00
+    Threshold correction factor:\xff\xfe1\x00.\x000\x00
+    Lower and upper bounds on threshold:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
+    Manual threshold:\xff\xfe0\x00.\x000\x001\x005\x00
+    Select the measurement to threshold with:\xff\xfeN\x00o\x00n\x00e\x00
+    Two-class or three-class thresholding?:\xff\xfeT\x00w\x00o\x00 \x00c\x00l\x00a\x00s\x00s\x00e\x00s\x00
+    Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
+    Size of adaptive window:\xff\xfe5\x000\x00
+    Lower outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Upper outlier fraction:\xff\xfe0\x00.\x000\x005\x00
+    Averaging method:\xff\xfeM\x00e\x00a\x00n\x00
+    Variance method:\xff\xfeS\x00t\x00a\x00n\x00d\x00a\x00r\x00d\x00 \x00d\x00e\x00v\x00i\x00a\x00t\x00i\x00o\x00n\x00
+    # of deviations:\xff\xfe2\x00.\x000\x00
+    Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
+
+MaskObjects:[module_num:55|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'Remove any parts of the \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d object that extends outside the ROI.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeR\x00O\x00I\x00
+    Name the masked objects:\xff\xfeV\x00R\x001\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeV\x00i\x00r\x00u\x00s\x00R\x00e\x00a\x00c\x00h\x00B\x00l\x00o\x00c\x00k\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeY\x00e\x00s\x00
+
+MaskObjects:[module_num:56|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'Mask away any parts of the \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d object that extends into the parabasal layer. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeV\x00R\x001\x00
+    Name the masked objects:\xff\xfeV\x00R\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeY\x00e\x00s\x00
+
+ConvertObjectsToImage:[module_num:57|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert the superficial object to an image.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00
+    Name the output image:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+MaskObjects:[module_num:58|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'Remove the superficial layer from the \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d area to identify the upper intermediate layer. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeV\x00R\x00
+    Name the masked objects:\xff\xfeU\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select the masking object:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00
+    Select the masking image:\xff\xfeN\x00o\x00n\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeY\x00e\x00s\x00
+
+ConvertObjectsToImage:[module_num:59|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeU\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00
+    Name the output image:\xff\xfeU\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:60|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Identify the lower intermediate layer by subtracting the other layers from the ROI image.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeS\x00u\x00b\x00t\x00r\x00a\x00c\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeY\x00e\x00s\x00
+    Set values greater than 1 equal to 1?:\xff\xfeY\x00e\x00s\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeL\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeR\x00O\x00I\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfep\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the third image:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the third image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the fourth image:\xff\xfeU\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the fourth image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+ImageMath:[module_num:61|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Create a new object of both parabasal and lower intermediate layer.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeY\x00e\x00s\x00
+    Set values greater than 1 equal to 1?:\xff\xfeY\x00e\x00s\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeP\x00a\x00r\x00a\x00A\x00n\x00d\x00L\x00o\x00w\x00e\x00r\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfep\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfeL\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+ExpandOrShrinkObjects:[module_num:62|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To find the line between the upper and the lower intermediate layer, the \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d object i.e. the superficial and upper intermediate layer combined, is expanded with 3 pixels. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeV\x00R\x00
+    Name the output objects:\xff\xfeV\x00R\x00p\x00l\x00u\x00s\x003\x00
+    Select the operation:\xff\xfeE\x00x\x00p\x00a\x00n\x00d\x00 \x00o\x00b\x00j\x00e\x00c\x00t\x00s\x00 \x00b\x00y\x00 \x00a\x00 \x00s\x00p\x00e\x00c\x00i\x00f\x00i\x00e\x00d\x00 \x00n\x00u\x00m\x00b\x00e\x00r\x00 \x00o\x00f\x00 \x00p\x00i\x00x\x00e\x00l\x00s\x00
+    Number of pixels by which to expand or shrink:\xff\xfe3\x00
+    Fill holes in objects so that all objects shrink to a single point?:\xff\xfeN\x00o\x00
+
+MaskObjects:[module_num:63|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'The expanded \\xe2\\x80\\x9cvirus-reach\\xe2\\x80\\x9d object was masked with the combined parabasal + lower intermediate layer.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfeV\x00R\x00p\x00l\x00u\x00s\x003\x00
+    Name the masked objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00s\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the masking object:\xff\xfeL\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00
+    Select the masking image:\xff\xfeP\x00a\x00r\x00a\x00A\x00n\x00d\x00L\x00o\x00w\x00e\x00r\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeN\x00o\x00
+
+SplitOrMergeObjects:[module_num:64|svn_version:\'Unknown\'|variable_revision_number:6|show_window:False|notes:\x5B\'Create separate objects of each separate part of this line between upper and lower intermediate layer, called VR line. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00s\x00
+    Name the new objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00s\x00s\x00e\x00p\x00a\x00r\x00a\x00t\x00e\x00
+    Operation:\xff\xfeS\x00p\x00l\x00i\x00t\x00
+    Maximum distance within which to merge objects:\xff\xfe0\x00
+    Merge using a grayscale image?:\xff\xfeN\x00o\x00
+    Select the grayscale image to guide merging:\xff\xfeN\x00o\x00n\x00e\x00
+    Minimum intensity fraction:\xff\xfe0\x00.\x009\x00
+    Method to find object intensity:\xff\xfeC\x00l\x00o\x00s\x00e\x00s\x00t\x00 \x00p\x00o\x00i\x00n\x00t\x00
+    Merging method:\xff\xfeD\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the parent object:\xff\xfeN\x00o\x00n\x00e\x00
+    Output object type:\xff\xfeD\x00i\x00s\x00c\x00o\x00n\x00n\x00e\x00c\x00t\x00e\x00d\x00
+
+MeasureObjectSizeShape:[module_num:65|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Measure the area of the different VR line objects. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
+    Select objects to measure:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00s\x00s\x00e\x00p\x00a\x00r\x00a\x00t\x00e\x00
+    Calculate the Zernike features?:\xff\xfeN\x00o\x00
+
+FilterObjects:[module_num:66|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\'Save the longest line by filter away smaller objects. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the objects to filter:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00s\x00s\x00e\x00p\x00a\x00r\x00a\x00t\x00e\x00
+    Name the output objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Select the filtering mode:\xff\xfeM\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00s\x00
+    Select the filtering method:\xff\xfeM\x00a\x00x\x00i\x00m\x00a\x00l\x00
+    Select the objects that contain the filtered objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the location of the rules or classifier file:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules or classifier file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe1\x00
+    Measurement count:\xff\xfe1\x00
+    Additional object count:\xff\xfe0\x00
+    Assign overlapping child to:\xff\xfeB\x00o\x00t\x00h\x00 \x00p\x00a\x00r\x00e\x00n\x00t\x00s\x00
+    Select the measurement to filter by:\xff\xfeA\x00r\x00e\x00a\x00S\x00h\x00a\x00p\x00e\x00_\x00A\x00r\x00e\x00a\x00
+    Filter using a minimum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe0\x00.\x000\x00
+    Filter using a maximum measurement value?:\xff\xfeY\x00e\x00s\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+
+ConvertObjectsToImage:[module_num:67|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Convert the VR line (the line between upper and lower intermediate layer) to image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Name the output image:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ExpandOrShrinkObjects:[module_num:68|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To define the line between the parabasal and lower intermediate layer, the parabasal object is first expanded by 3 pixels. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00
+    Name the output objects:\xff\xfep\x00a\x00r\x00a\x00p\x00l\x00u\x00s\x003\x00
+    Select the operation:\xff\xfeE\x00x\x00p\x00a\x00n\x00d\x00 \x00o\x00b\x00j\x00e\x00c\x00t\x00s\x00 \x00b\x00y\x00 \x00a\x00 \x00s\x00p\x00e\x00c\x00i\x00f\x00i\x00e\x00d\x00 \x00n\x00u\x00m\x00b\x00e\x00r\x00 \x00o\x00f\x00 \x00p\x00i\x00x\x00e\x00l\x00s\x00
+    Number of pixels by which to expand or shrink:\xff\xfe3\x00
+    Fill holes in objects so that all objects shrink to a single point?:\xff\xfeN\x00o\x00
+
+MaskObjects:[module_num:69|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\'The expanded parabasal layer is then masked by the lower intermediate layer. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:\xff\xfep\x00a\x00r\x00a\x00p\x00l\x00u\x00s\x003\x00
+    Name the masked objects:\xff\xfep\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Mask using a region defined by other objects or by binary image?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the masking object:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00
+    Select the masking image:\xff\xfeL\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Handling of objects that are partially masked:\xff\xfeK\x00e\x00e\x00p\x00 \x00o\x00v\x00e\x00r\x00l\x00a\x00p\x00p\x00i\x00n\x00g\x00 \x00r\x00e\x00g\x00i\x00o\x00n\x00
+    Fraction of object that must overlap:\xff\xfe0\x00.\x005\x00
+    Numbering of resulting objects:\xff\xfeR\x00e\x00n\x00u\x00m\x00b\x00e\x00r\x00
+    Invert the mask?:\xff\xfeN\x00o\x00
+
+ConvertObjectsToImage:[module_num:70|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\'Measure the area of the line separating the parabasal and lower intermediate layer. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:\xff\xfep\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Name the output image:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select the color format:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00(\x00b\x00l\x00a\x00c\x00k\x00 \x00&\x00 \x00w\x00h\x00i\x00t\x00e\x00)\x00
+    Select the colormap:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00
+
+ImageMath:[module_num:71|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Invert the VR line image\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeN\x00o\x00
+    Set values greater than 1 equal to 1?:\xff\xfeN\x00o\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeV\x00R\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:72|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'Create a distance transform of the VR line\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeV\x00R\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Name the output image:\xff\xfeV\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeN\x00o\x00
+
+ImageMath:[module_num:73|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Invert the line between the parabasal and lower intermediate layer.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Operation:\xff\xfeI\x00n\x00v\x00e\x00r\x00t\x00
+    Raise the power of the result by:\xff\xfe1\x00.\x000\x00
+    Multiply the result by:\xff\xfe1\x00.\x000\x00
+    Add to result:\xff\xfe0\x00.\x000\x00
+    Set values less than 0 equal to 0?:\xff\xfeN\x00o\x00
+    Set values greater than 1 equal to 1?:\xff\xfeN\x00o\x00
+    Ignore the image masks?:\xff\xfeN\x00o\x00
+    Name the output image:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first image:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Multiply the first image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+    Image or measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second image:\xff\xfe
+    Multiply the second image by:\xff\xfe1\x00.\x000\x00
+    Measurement:\xff\xfe
+
+Morph:[module_num:74|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'Create a distance transform from the line between the parabasal and the lower intermediate layer. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00I\x00n\x00v\x00e\x00r\x00t\x00
+    Name the output image:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Select the operation to perform:\xff\xfed\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Number of times to repeat operation:\xff\xfeO\x00n\x00c\x00e\x00
+    Repetition number:\xff\xfe2\x00
+    Rescale values from 0 to 1?:\xff\xfeN\x00o\x00
+
+OverlayOutlines:[module_num:75|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'Display the different layers on the raw image.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Display outlines on a blank image?:\xff\xfeN\x00o\x00
+    Select image on which to display outlines:\xff\xfer\x00a\x00w\x00
+    Name the output image:\xff\xfeO\x00r\x00i\x00g\x00O\x00v\x00e\x00r\x00l\x00a\x00y\x00
+    Outline display mode:\xff\xfeC\x00o\x00l\x00o\x00r\x00
+    Select method to determine brightness of outlines:\xff\xfeM\x00a\x00x\x00 \x00o\x00f\x00 \x00i\x00m\x00a\x00g\x00e\x00
+    How to outline:\xff\xfeT\x00h\x00i\x00c\x00k\x00
+    Select outline color:\xff\xfeR\x00e\x00d\x00
+    Select objects to display:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select outline color:\xff\xfeG\x00r\x00e\x00e\x00n\x00
+    Select objects to display:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Select outline color:\xff\xfe#\x00F\x00C\x007\x00F\x000\x008\x00
+    Select objects to display:\xff\xfep\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Select outline color:\xff\xfeY\x00e\x00l\x00l\x00o\x00w\x00
+    Select objects to display:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+
+SaveImages:[module_num:76|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:True]
+    Select the type of image to save:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the image to save:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Select method for constructing file names:\xff\xfeF\x00r\x00o\x00m\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x00f\x00i\x00l\x00e\x00n\x00a\x00m\x00e\x00
+    Select image name for file prefix:\xff\xfer\x00a\x00w\x00
+    Enter single file name:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Number of digits:\xff\xfe4\x00
+    Append a suffix to the image file name?:\xff\xfeY\x00e\x00s\x00
+    Text to append to the image name:\xff\xfe_\x00s\x00u\x00p\x00
+    Saved file format:\xff\xfep\x00n\x00g\x00
+    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00 \x00s\x00u\x00b\x00-\x00f\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00I\x00m\x00a\x00g\x00e\x00s\x00_\x00f\x00r\x00o\x00m\x00_\x00p\x00i\x00p\x00e\x002\x00
+    Image bit depth:\xff\xfe8\x00-\x00b\x00i\x00t\x00 \x00i\x00n\x00t\x00e\x00g\x00e\x00r\x00
+    Overwrite existing files without warning?:\xff\xfeY\x00e\x00s\x00
+    When to save:\xff\xfeE\x00v\x00e\x00r\x00y\x00 \x00c\x00y\x00c\x00l\x00e\x00
+    Record the file and path information to the saved image?:\xff\xfeN\x00o\x00
+    Create subfolders in the output folder?:\xff\xfeN\x00o\x00
+    Base image folder:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+
+SaveImages:[module_num:77|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the image to save:\xff\xfeU\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select method for constructing file names:\xff\xfeF\x00r\x00o\x00m\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x00f\x00i\x00l\x00e\x00n\x00a\x00m\x00e\x00
+    Select image name for file prefix:\xff\xfer\x00a\x00w\x00
+    Enter single file name:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Number of digits:\xff\xfe4\x00
+    Append a suffix to the image file name?:\xff\xfeY\x00e\x00s\x00
+    Text to append to the image name:\xff\xfe_\x00u\x00p\x00p\x00e\x00r\x00
+    Saved file format:\xff\xfep\x00n\x00g\x00
+    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00 \x00s\x00u\x00b\x00-\x00f\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00I\x00m\x00a\x00g\x00e\x00s\x00_\x00f\x00r\x00o\x00m\x00_\x00p\x00i\x00p\x00e\x002\x00
+    Image bit depth:\xff\xfe8\x00-\x00b\x00i\x00t\x00 \x00i\x00n\x00t\x00e\x00g\x00e\x00r\x00
+    Overwrite existing files without warning?:\xff\xfeY\x00e\x00s\x00
+    When to save:\xff\xfeE\x00v\x00e\x00r\x00y\x00 \x00c\x00y\x00c\x00l\x00e\x00
+    Record the file and path information to the saved image?:\xff\xfeN\x00o\x00
+    Create subfolders in the output folder?:\xff\xfeN\x00o\x00
+    Base image folder:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+
+SaveImages:[module_num:78|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the image to save:\xff\xfeL\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Select method for constructing file names:\xff\xfeF\x00r\x00o\x00m\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x00f\x00i\x00l\x00e\x00n\x00a\x00m\x00e\x00
+    Select image name for file prefix:\xff\xfer\x00a\x00w\x00
+    Enter single file name:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Number of digits:\xff\xfe4\x00
+    Append a suffix to the image file name?:\xff\xfeY\x00e\x00s\x00
+    Text to append to the image name:\xff\xfe_\x00l\x00o\x00w\x00e\x00r\x00
+    Saved file format:\xff\xfep\x00n\x00g\x00
+    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00 \x00s\x00u\x00b\x00-\x00f\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00I\x00m\x00a\x00g\x00e\x00s\x00_\x00f\x00r\x00o\x00m\x00_\x00p\x00i\x00p\x00e\x002\x00
+    Image bit depth:\xff\xfe8\x00-\x00b\x00i\x00t\x00 \x00i\x00n\x00t\x00e\x00g\x00e\x00r\x00
+    Overwrite existing files without warning?:\xff\xfeY\x00e\x00s\x00
+    When to save:\xff\xfeE\x00v\x00e\x00r\x00y\x00 \x00c\x00y\x00c\x00l\x00e\x00
+    Record the file and path information to the saved image?:\xff\xfeN\x00o\x00
+    Create subfolders in the output folder?:\xff\xfeN\x00o\x00
+    Base image folder:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+
+SaveImages:[module_num:79|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the type of image to save:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the image to save:\xff\xfep\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00I\x00m\x00a\x00g\x00e\x00
+    Select method for constructing file names:\xff\xfeF\x00r\x00o\x00m\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x00f\x00i\x00l\x00e\x00n\x00a\x00m\x00e\x00
+    Select image name for file prefix:\xff\xfer\x00a\x00w\x00
+    Enter single file name:\xff\xfeO\x00r\x00i\x00g\x00B\x00l\x00u\x00e\x00
+    Number of digits:\xff\xfe4\x00
+    Append a suffix to the image file name?:\xff\xfeY\x00e\x00s\x00
+    Text to append to the image name:\xff\xfe_\x00p\x00a\x00r\x00a\x00
+    Saved file format:\xff\xfep\x00n\x00g\x00
+    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00 \x00s\x00u\x00b\x00-\x00f\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00I\x00m\x00a\x00g\x00e\x00s\x00_\x00f\x00r\x00o\x00m\x00_\x00p\x00i\x00p\x00e\x002\x00
+    Image bit depth:\xff\xfe8\x00-\x00b\x00i\x00t\x00 \x00i\x00n\x00t\x00e\x00g\x00e\x00r\x00
+    Overwrite existing files without warning?:\xff\xfeY\x00e\x00s\x00
+    When to save:\xff\xfeE\x00v\x00e\x00r\x00y\x00 \x00c\x00y\x00c\x00l\x00e\x00
+    Record the file and path information to the saved image?:\xff\xfeN\x00o\x00
+    Create subfolders in the output folder?:\xff\xfeN\x00o\x00
+    Base image folder:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+
+MeasureImageAreaOccupied:[module_num:80|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Hidden:\xff\xfe1\x000\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfeR\x00O\x00I\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfeS\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfeU\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeB\x00i\x00n\x00a\x00r\x00y\x00 \x00I\x00m\x00a\x00g\x00e\x00
+    Select objects to measure:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select a binary image to measure:\xff\xfeL\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfeP\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+    Measure the area occupied in a binary image, or in objects?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00s\x00
+    Select objects to measure:\xff\xfep\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Select a binary image to measure:\xff\xfeN\x00o\x00n\x00e\x00
+
+MeasureImageIntensity:[module_num:81|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the image to measure:\xff\xfeA\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeA\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeB\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeB\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeE\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeE\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeV\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfee\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeV\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfep\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeP\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeB\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfep\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeE\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeA\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeV\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfea\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeB\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeV\x00R\x00l\x00i\x00n\x00e\x00
+    Select the image to measure:\xff\xfeV\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00
+    Measure the intensity only from areas enclosed by objects?:\xff\xfeY\x00e\x00s\x00
+    Select the input objects:\xff\xfeb\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+
+CalculateMath:[module_num:82|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the basalline to the apical line (in the apical line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00A\x00p\x00i\x00c\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00A\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:83|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the E-cadherin line to the apical line (in the apical line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00E\x00t\x00o\x00A\x00p\x00i\x00c\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00A\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00e\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00e\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:84|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the apical line to the basal line (in the basal line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00B\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:85|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the Ecadherin line to the basal line (in the basal line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00E\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00B\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00e\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00e\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:86|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the apical line to the Ecadherin line (in the Ecadherin line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00E\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00E\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:87|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the basal line to the Ecadherin line (in the Ecadherin line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00E\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00E\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:88|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the Ecadherin line to the line between the upper and lower intermediate layer line (in the upper-lower (VR) line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00E\x00t\x00o\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00V\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00e\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00e\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:89|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the line between the parabasal and lower intermediate line to the line between the upper and lower intermediate layer line (in the upper-lower (VR) line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00P\x00a\x00r\x00a\x00t\x00o\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00V\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00p\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00p\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:90|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the basal line to the line between the parabasal and lower intermediate layer line (in the parabasal-lower line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00B\x00a\x00s\x00t\x00o\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:91|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the VR (line between the upper and lower intermediate) line to the line between the parabasal and lower intermediate layer line (in the parabasal-lower line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:92|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the parabasal-lower intermediate line to the basal line (in the basal line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00P\x00a\x00r\x00a\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00B\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00p\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00p\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:93|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the upper-lower intermediate line to the Ecadherin line (in the Ecadherin line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00E\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00E\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:94|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the upper-lower intermediate line to the apical line (in the apical line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00a\x00p\x00i\x00c\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00A\x00p\x00i\x00c\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:95|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the apical line to the upper-lower intermediate line (in the upper-lower intermediate line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00V\x00R\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00V\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:96|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the basal line to the upper-lower intermediate line (in the upper-lower intermediate line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00V\x00R\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00V\x00R\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:97|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance from the upper-lower intermediate line to the basal line (in the basal line distance image), in \\xc2\\xb5m (by multiplying each pixel with 0.325\\xc2\\xb5m)\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeF\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Operation:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
+    Select the numerator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the numerator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the numerator measurement:\xff\xfeI\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00T\x00o\x00t\x00a\x00l\x00I\x00n\x00t\x00e\x00n\x00s\x00i\x00t\x00y\x00_\x00B\x00a\x00s\x00a\x00l\x00D\x00i\x00s\x00t\x00a\x00n\x00c\x00e\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the denominator measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the denominator objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the denominator measurement:\xff\xfeA\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x003\x002\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:98|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00T\x00o\x00t\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00A\x00p\x00i\x00c\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:99|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00S\x00u\x00p\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00E\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00E\x00t\x00o\x00A\x00p\x00i\x00c\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:100|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00E\x00c\x00a\x00d\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00E\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00E\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:101|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00U\x00p\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00E\x00t\x00o\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00E\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:102|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00L\x00o\x00w\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00P\x00a\x00r\x00a\x00t\x00o\x00V\x00R\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:103|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00P\x00a\x00r\x00a\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00t\x00o\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00P\x00a\x00r\x00a\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:104|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00V\x00R\x00t\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00V\x00R\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00a\x00p\x00i\x00c\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+CalculateMath:[module_num:105|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'Calculate the average distance between top-bottom and bottom-top measurement. \'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Name the output measurement:\xff\xfeA\x00v\x00e\x00I\x00n\x00t\x00a\x00c\x00t\x00E\x00c\x00a\x00d\x00T\x00h\x00i\x00c\x00k\x00
+    Operation:\xff\xfeA\x00d\x00d\x00
+    Select the first operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the first operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the first operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00V\x00R\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Select the second operand measurement type:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Select the second operand objects:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the second operand measurement:\xff\xfeM\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00
+    Multiply the above operand by:\xff\xfe1\x00.\x000\x00
+    Raise the power of above operand by:\xff\xfe1\x00.\x000\x00
+    Take log10 of result?:\xff\xfeN\x00o\x00
+    Multiply the result by:\xff\xfe0\x00.\x005\x00
+    Raise the power of result by:\xff\xfe1\x00.\x000\x00
+    Add to the result:\xff\xfe0\x00.\x000\x00
+    Constrain the result to a lower bound?:\xff\xfeN\x00o\x00
+    Enter the lower bound:\xff\xfe0\x00.\x000\x00
+    Constrain the result to an upper bound?:\xff\xfeN\x00o\x00
+    Enter the upper bound:\xff\xfe1\x00.\x000\x00
+
+ExportToSpreadsheet:[module_num:106|svn_version:\'Unknown\'|variable_revision_number:12|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the column delimiter:\xff\xfeC\x00o\x00m\x00m\x00a\x00 \x00(\x00"\x00,\x00"\x00)\x00
+    Add image metadata columns to your object data file?:\xff\xfeY\x00e\x00s\x00
+    Select the measurements to export:\xff\xfeY\x00e\x00s\x00
+    Calculate the per-image mean values for object measurements?:\xff\xfeN\x00o\x00
+    Calculate the per-image median values for object measurements?:\xff\xfeN\x00o\x00
+    Calculate the per-image standard deviation values for object measurements?:\xff\xfeN\x00o\x00
+    Output file location:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00 \x00O\x00u\x00t\x00p\x00u\x00t\x00 \x00F\x00o\x00l\x00d\x00e\x00r\x00 \x00s\x00u\x00b\x00-\x00f\x00o\x00l\x00d\x00e\x00r\x00\x7C\x00I\x00m\x00a\x00g\x00e\x00s\x00_\x00f\x00r\x00o\x00m\x00_\x00p\x00i\x00p\x00e\x002\x00
+    Create a GenePattern GCT file?:\xff\xfeN\x00o\x00
+    Select source of sample row name:\xff\xfeM\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Select the image to use as the identifier:\xff\xfeN\x00o\x00n\x00e\x00
+    Select the metadata to use as the identifier:\xff\xfeN\x00o\x00n\x00e\x00
+    Export all measurement types?:\xff\xfeN\x00o\x00
+    Press button to select measurements:\xff\xfeI\x00m\x00a\x00g\x00e\x00\x7C\x00C\x00o\x00u\x00n\x00t\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00C\x00o\x00u\x00n\x00t\x00_\x00e\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00C\x00o\x00u\x00n\x00t\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00R\x00O\x00I\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00S\x00u\x00p\x00e\x00r\x00f\x00i\x00c\x00i\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00U\x00p\x00p\x00e\x00r\x00_\x00i\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00V\x00R\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00e\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00p\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00L\x00o\x00w\x00e\x00r\x00I\x00n\x00t\x00e\x00r\x00m\x00e\x00d\x00i\x00a\x00t\x00e\x00I\x00m\x00a\x00g\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00a\x00p\x00i\x00c\x00a\x00l\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00P\x00a\x00r\x00a\x00b\x00a\x00s\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00A\x00r\x00e\x00a\x00O\x00c\x00c\x00u\x00p\x00i\x00e\x00d\x00_\x00b\x00a\x00s\x00a\x00l\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00F\x00i\x00l\x00e\x00N\x00a\x00m\x00e\x00_\x00r\x00a\x00w\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00P\x00a\x00r\x00a\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00E\x00c\x00a\x00d\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00a\x00p\x00i\x00c\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00E\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00t\x00o\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00P\x00a\x00r\x00a\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00L\x00o\x00w\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00E\x00t\x00o\x00A\x00p\x00i\x00c\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00E\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00V\x00R\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00E\x00t\x00o\x00V\x00R\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00V\x00R\x00t\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00P\x00a\x00r\x00a\x00t\x00o\x00V\x00R\x00l\x00i\x00n\x00e\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00I\x00n\x00t\x00a\x00c\x00t\x00E\x00c\x00a\x00d\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00V\x00R\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00E\x00t\x00o\x00B\x00a\x00s\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00B\x00a\x00s\x00a\x00l\x00t\x00o\x00A\x00p\x00i\x00c\x00a\x00l\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00V\x00R\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00U\x00p\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00F\x00r\x00o\x00m\x00A\x00p\x00i\x00c\x00a\x00l\x00t\x00o\x00E\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00T\x00o\x00t\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00P\x00a\x00r\x00a\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00a\x00t\x00h\x00_\x00A\x00v\x00e\x00S\x00u\x00p\x00T\x00h\x00i\x00c\x00k\x00,\x00I\x00m\x00a\x00g\x00e\x00\x7C\x00M\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00_\x00E\x00x\x00a\x00m\x00p\x00l\x00e\x00
+    Representation of Nan/Inf:\xff\xfeN\x00a\x00N\x00
+    Add a prefix to file names?:\xff\xfeY\x00e\x00s\x00
+    Filename prefix:\xff\xfeT\x00h\x00i\x00c\x00k\x00_\x00
+    Overwrite existing files without warning?:\xff\xfeY\x00e\x00s\x00
+    Data to export:\xff\xfeI\x00m\x00a\x00g\x00e\x00
+    Combine these object measurements with those of the previous object?:\xff\xfeN\x00o\x00
+    File name:\xff\xfeD\x00A\x00T\x00A\x00.\x00c\x00s\x00v\x00
+    Use the object name for the file name?:\xff\xfeY\x00e\x00s\x00
